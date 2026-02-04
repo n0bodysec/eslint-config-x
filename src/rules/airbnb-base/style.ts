@@ -1,6 +1,6 @@
 import type { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
 
-export default {
+const config: FlatConfig.Config = {
 	name: '@snowyyd/eslint-config-x/rules/airbnb-base/style',
 	rules: {
 		// TODO: enable? semver-major
@@ -272,4 +272,6 @@ export default {
 		'unicode-bom': ['error', 'never'],
 		'@stylistic/wrap-regex': 'off',
 	},
-} satisfies FlatConfig.Config;
+};
+
+export default config;

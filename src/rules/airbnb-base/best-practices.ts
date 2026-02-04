@@ -1,6 +1,6 @@
 import type { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
 
-export default {
+const config: FlatConfig.Config = {
 	name: '@snowyyd/eslint-config-x/rules/airbnb-base/best-practices',
 	rules: {
 		'accessor-pairs': 'off',
@@ -162,4 +162,6 @@ export default {
 		'@stylistic/wrap-iife': ['error', 'outside', { functionPrototypeMethods: false }],
 		yoda: 'error',
 	},
-} satisfies FlatConfig.Config;
+};
+
+export default config;

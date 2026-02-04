@@ -5,7 +5,7 @@ import es6 from './rules/airbnb-base/es6.ts';
 import style from './rules/airbnb-base/style.ts';
 import variables from './rules/airbnb-base/variables.ts';
 
-function replaceRule(ruleName: string, baseConfig: FlatConfig.Config, newName?: string)
+function replaceRule(ruleName: string, baseConfig: FlatConfig.Config, newName?: string): FlatConfig.Config['rules']
 {
 	if (!baseConfig.rules || !(ruleName in (baseConfig.rules)))
 	{
@@ -15,7 +15,7 @@ function replaceRule(ruleName: string, baseConfig: FlatConfig.Config, newName?: 
 	return {
 		[ruleName]: 'off',
 		[`@typescript-eslint/${newName ?? ruleName}`]: baseConfig.rules[ruleName],
-	} satisfies FlatConfig.Config['rules'];
+	};
 }
 
 export default (plugin: FlatConfig.Plugin, parser: FlatConfig.Parser): FlatConfig.ConfigArray => [

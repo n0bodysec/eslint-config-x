@@ -2,7 +2,7 @@ import type { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
 import nodePlugin from 'eslint-plugin-n';
 import globals from 'globals';
 
-export default {
+const config: FlatConfig.Config = {
 	name: '@snowyyd/eslint-config-x/rules/airbnb-base/node',
 	languageOptions: {
 		globals: {
@@ -25,4 +25,6 @@ export default {
 		'n/no-restricted-require': 'off',
 		'n/no-sync': 'off',
 	},
-} satisfies FlatConfig.Config;
+};
+
+export default config;

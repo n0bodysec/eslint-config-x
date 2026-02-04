@@ -1,7 +1,7 @@
 import type { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
 // import variables from '../airbnb-base/variables.ts';
 
-export default {
+const config: FlatConfig.Config = {
 	name: '@snowyyd/eslint-config-x/rules/personal/shared',
 	rules: {
 		'no-restricted-globals': [
@@ -19,4 +19,6 @@ export default {
 			},
 		],
 	},
-} satisfies FlatConfig.Config;
+};
+
+export default config;

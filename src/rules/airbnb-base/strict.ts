@@ -1,7 +1,7 @@
 import type { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
 import globals from 'globals';
 
-export default {
+const config: FlatConfig.Config = {
 	name: '@snowyyd/eslint-config-x/rules/airbnb-base/strict',
 	languageOptions: {
 		globals: {
@@ -11,4 +11,6 @@ export default {
 	rules: {
 		strict: ['error', 'never'],
 	},
-} satisfies FlatConfig.Config;
+};
+
+export default config;

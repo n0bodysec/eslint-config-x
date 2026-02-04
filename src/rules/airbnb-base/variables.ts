@@ -1,7 +1,7 @@
 import type { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
 import confusingBrowserGlobals from 'confusing-browser-globals';
 
-export default {
+const config: FlatConfig.Config = {
 	name: '@snowyyd/eslint-config-x/rules/airbnb-base/variables',
 	rules: {
 		'init-declarations': 'off',
@@ -33,4 +33,6 @@ export default {
 		'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
 		'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
 	},
-} satisfies FlatConfig.Config;
+};
+
+export default config;

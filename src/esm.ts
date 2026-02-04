@@ -14,7 +14,9 @@ export default (plugin: FlatConfig.Plugin, parser: FlatConfig.Parser): FlatConfi
 			'import-x/extensions': ['error', 'ignorePackages'],
 
 			'no-restricted-globals': [
-				...shared.rules['no-restricted-globals'],
+				'error',
+				// TODO: hacky
+				...(shared.rules!['no-restricted-globals'] as unknown[]).splice(1),
 				// __dirname & __filename cannot be used in ESM
 				{
 					name: '__dirname',

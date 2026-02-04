@@ -1,7 +1,7 @@
 import type { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
 import globals from 'globals';
 
-export default {
+const config: FlatConfig.Config = {
 	name: '@snowyyd/eslint-config-x/rules/airbnb-base/es6',
 	languageOptions: {
 		ecmaVersion: 6,
@@ -84,4 +84,6 @@ export default {
 		'@stylistic/template-curly-spacing': 'error',
 		'@stylistic/yield-star-spacing': ['error', 'after'],
 	},
-} satisfies FlatConfig.Config;
+};
+
+export default config;

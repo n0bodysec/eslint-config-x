@@ -1,6 +1,6 @@
 import type { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
 
-export default {
+const config: FlatConfig.Config = {
 	name: '@snowyyd/eslint-config-x/rules/airbnb-base/errors',
 	rules: {
 		'for-direction': 'error',
@@ -61,4 +61,6 @@ export default {
 		// 'valid-jsdoc': 'off',
 		'valid-typeof': ['error', { requireStringLiterals: true }],
 	},
-} satisfies FlatConfig.Config;
+};
+
+export default config;

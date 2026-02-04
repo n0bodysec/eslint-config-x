@@ -2,7 +2,7 @@ import type { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
 import importX from 'eslint-plugin-import-x';
 import globals from 'globals';
 
-export default {
+const config: FlatConfig.Config = {
 	name: '@snowyyd/eslint-config-x/rules/airbnb-base/imports',
 	languageOptions: {
 		ecmaVersion: 6,
@@ -127,4 +127,6 @@ export default {
 		'import-x/consistent-type-specifier-style': ['off', 'prefer-inline'], // TODO, semver-major: enable (just in case)
 		'import-x/no-empty-named-blocks': 'off', // TODO, semver-minor: enable
 	},
-} satisfies FlatConfig.Config;
+};
+
+export default config;
