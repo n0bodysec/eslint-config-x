@@ -19,32 +19,31 @@
 		"prepack": "pnpm build"
 	},
 	"devDependencies": {
-		"@eslint/config-inspector": "^1.4.2",
-		"@eslint/js": "^9.39.3",
-		"@stylistic/eslint-plugin": "^5.9.0",
+		"@eslint/config-inspector": "^1.5.0",
+		"@eslint/js": "^9.39.4",
+		"@stylistic/eslint-plugin": "^5.10.0",
 		"@types/confusing-browser-globals": "^1.0.3",
 		"@types/lodash": "^4.17.24",
-		"@types/node": "^25.3.0",
-		"@typescript-eslint/eslint-plugin": "^8.56.1",
-		"@typescript-eslint/utils": "^8.56.1",
+		"@types/node": "^25.5.0",
+		"@typescript-eslint/eslint-plugin": "^8.57.2",
+		"@typescript-eslint/utils": "^8.57.2",
 		"chalk": "^5.6.2",
 		"confusing-browser-globals": "^1.0.11",
-		"eslint": "^9.39.3",
-		"eslint-plugin-import-x": "^4.16.1",
+		"eslint": "^9.39.4",
+		"eslint-plugin-import-x": "^4.16.2",
 		"eslint-plugin-n": "^17.24.0",
-		"globals": "^17.3.0",
+		"globals": "^17.4.0",
 		"lodash": "^4.17.23",
-		"tsx": "^4.21.0",
-		"typescript": "^5.9.3",
-		"typescript-eslint": "^8.56.1"
+		"typescript": "^6.0.2",
+		"typescript-eslint": "^8.57.2"
 	},
 	"peerDependencies": {
-		"@eslint/js": "^9.39.3",
-		"@stylistic/eslint-plugin": "^5.9.0",
+		"@eslint/js": "^9.39.4",
+		"@stylistic/eslint-plugin": "^5.10.0",
 		"confusing-browser-globals": "^1.0.11",
-		"eslint-plugin-import-x": "^4.16.1",
+		"eslint-plugin-import-x": "^4.16.2",
 		"eslint-plugin-n": "^17.24.0",
-		"globals": "^17.3.0",
-		"typescript-eslint": "^8.56.1"
+		"globals": "^17.4.0",
+		"typescript-eslint": "^8.57.2"
 	}
 }
